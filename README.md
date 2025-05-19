@@ -1,6 +1,6 @@
 # Documentation React Typescript With Vite 
 
-<img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"  height="25" alt="vite logo"> <img src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react" width="85" height="25" alt="react logo"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" width="85" height="25" alt="typescript logo"> <img src="https://img.shields.io/badge/-Redux_Thunk-764ABC?style=flat&logo=redux&logoColor=white" width="110" height="25" alt="redux thunk logo"> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="110" height="25" alt="tailwind css logo"> <p align="center"> <img src="https://via.placeholder.com/600x300?text=Project+Screenshot" width="60%" alt="project screenshot placeholder"> </p>
+<img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"  height="25" alt="vite logo"> <img src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react" width="85" height="25" alt="react logo"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" width="85" height="25" alt="typescript logo"> <img src="https://img.shields.io/badge/-Redux_Thunk-764ABC?style=flat&logo=redux&logoColor=white" width="110" height="25" alt="redux thunk logo"> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="110" height="25" alt="tailwind css logo"> <p align="center"> </p>
 
 <p align="center">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmaGlMyLwaEbFEK6PeYp1ZPGd5eoUuEzgpu-gY12dFd8VwIlZef754RzcUIjJ2p3WYsw&usqp=CAU" width="35%" alt="logo">
@@ -59,7 +59,7 @@ npm install -g pnpm
 
 If you have the problem with the pnpm like this:
 
-![problem.jpg](./src/assets/documentasi/problem.jpg)
+![problem.jpg](./src/assets/documentation/problem.jpg)
 
 So you can look [this](https://lazyadmin.nl/powershell/running-scripts-is-disabled-on-this-system/) for fixed the problem
 
@@ -104,4 +104,4 @@ So if you run this app the page applications you can see like this
 
 ### The technology use to create the application
 
-<img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"  height="25" alt="vite logo"> <img src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react" width="85" height="25" alt="react logo"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" width="85" height="25" alt="typescript logo"> <img src="https://img.shields.io/badge/-Redux_Thunk-764ABC?style=flat&logo=redux&logoColor=white" width="110" height="25" alt="redux thunk logo"> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="110" height="25" alt="tailwind css logo"> <p align="center"> <img src="https://via.placeholder.com/600x300?text=Project+Screenshot" width="60%" alt="project screenshot placeholder"> </p>
+<img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"  height="25" alt="vite logo"> <img src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react" width="85" height="25" alt="react logo"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" width="85" height="25" alt="typescript logo"> <img src="https://img.shields.io/badge/-Redux_Thunk-764ABC?style=flat&logo=redux&logoColor=white" width="110" height="25" alt="redux thunk logo"> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="110" height="25" alt="tailwind css logo"> <p align="center"></p>
