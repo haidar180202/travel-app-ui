@@ -20,7 +20,7 @@ const ArticleList = () => {
 
     const { data: categories } = useAppSelector((state: RootState) => state.category);
 
-    const { email: user } = useAppSelector((state: RootState) => state.auth.user);
+    const { user } = useAppSelector((state: RootState) => state.auth);
 
     const [editModal, setEditModal] = useState<any | null>(null);
     const [deleteModal, setDeleteModal] = useState<any | null>(null);
@@ -221,7 +221,7 @@ const ArticleList = () => {
                             </h2>
                             <p className="text-sm text-gray-600 line-clamp-3">{article.description}</p>
                             <div className="mt-4 flex justify-between">
-                                {article?.user?.email === user ? (
+                                {article?.user?.email === user?.email ? (
                                     <>
                                         <button
                                             onClick={() => openEditModal(article)}
