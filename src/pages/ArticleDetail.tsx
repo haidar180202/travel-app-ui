@@ -74,9 +74,9 @@ const ArticleDetail = () => {
             src={data.cover_image_url}
             alt={data.title}
             className="w-full h-[420px] object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = '/placeholder.jpg';
-            }}
+            // onError={(e) => {
+            //   (e.target as HTMLImageElement).src = '/placeholder.jpg';
+            // }}
           />
         </div>
       )}

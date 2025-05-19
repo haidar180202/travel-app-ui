@@ -5,6 +5,7 @@ import RegisterPage from '../pages/RegisterPage';
 import PrivateRoute from './PrivateRoute';
 import ArticleList from '../pages/ArticleList';
 import ArticleDetail from '../pages/ArticleDetail';
+import NotFound from '../pages/NotFound';
 
 
 const AppRoutes = () => (
@@ -21,7 +22,7 @@ const AppRoutes = () => (
       </Route>
 
       {/* Route fallback jika tidak ketemu */}
-      <Route path="*" element={<div>404 Not Found</div>} />
+      <Route path="*" element={<NotFound/>} />
     </Routes>
   </BrowserRouter>
 );

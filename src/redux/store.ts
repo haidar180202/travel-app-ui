@@ -3,6 +3,8 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // localStorage
 import authReducer from './slices/authSlice';
 import articleReducer from './slices/articleSlice';
+import categoryReducer from './slices/categorySlice';
+
 
 import { combineReducers } from 'redux';
 
@@ -15,6 +17,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   auth: authReducer,
   articles: articleReducer,
+  category: categoryReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

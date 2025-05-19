@@ -41,22 +41,39 @@ const initialState: ArticleState = {
     filter: {},
 };
 
+
+
 export const fetchArticles = createAsyncThunk<
     { data: Article[]; meta: { pagination: { total: number } } },
     { page?: number; pageSize?: number; filter?: ArticleFilter }
 >("articles/fetchArticles", async (params, { rejectWithValue }) => {
     try {
         const { page = 1, pageSize = 4, filter = {} } = params;
+
         const query = new URLSearchParams({
             "pagination[page]": page.toString(),
             "pagination[pageSize]": pageSize.toString(),
-            ...Object.entries(filter).reduce((acc: Record<string, string>, [key, val]) => {
-                if (val) acc[key] = String(val);
-                return acc;
-            }, {}),
+            "populate[populate][user]": "*",
+            "populate[user]": "*",
+            "populate[category]": "*",
+            
         });
 
-        const response = await axios.get(`${API_BASE}/articles?${query.toString()}`);
+        // Tambahkan filter dengan format yang benar
+        if (filter.search) {
+            query.append("filters[title][$eqi]", filter.search); // eqi = equal insensitive (case-insensitive)
+        }
+
+        if (filter.category) {
+            query.append("populate[category]", filter.category);
+        }
+
+        const response = await axios.get(`${API_BASE}/articles?${query.toString()}`, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+        });
+// console.log(`first00009999 ${response.data.category.id}`)
         return response.data;
     } catch (error: any) {
         return rejectWithValue(error.response?.data?.message || "Failed to fetch articles");
@@ -88,7 +105,7 @@ export const createArticle = createAsyncThunk<Article, Partial<Article>>(
     async (data, { rejectWithValue }) => {
         try {
             const token = localStorage.getItem("token");
-            const response = await axios.post(`${API_BASE}/articles`, data, {
+            const response = await axios.post(`${API_BASE}/articles`,  { data: data } , {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -101,14 +118,13 @@ export const createArticle = createAsyncThunk<Article, Partial<Article>>(
 );
 
 
-// Tambahan: Edit (Update)
 export const updateArticle = createAsyncThunk<
     Article,
     { id: number | string; data: Partial<Article> }
 >("articles/updateArticle", async ({ id, data }, { rejectWithValue }) => {
     try {
         const token = localStorage.getItem("token");
-        const response = await axios.put(`${API_BASE}/articles/${id}`, data, {
+        const response = await axios.put(`${API_BASE}/articles/${id}`, {data} , {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -118,6 +134,7 @@ export const updateArticle = createAsyncThunk<
         return rejectWithValue(error.response?.data?.message || "Failed to update article");
     }
 });
+
 
 // Tambahan: Delete
 export const deleteArticle = createAsyncThunk<
