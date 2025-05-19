@@ -1,54 +1,107 @@
-# React + TypeScript + Vite
+# Documentation React Typescript With Vite 
+<br/>
+<img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"  height="25" alt="vite logo"> <img src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react" width="85" height="25" alt="react logo"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" width="85" height="25" alt="typescript logo"> <img src="https://img.shields.io/badge/-Redux_Thunk-764ABC?style=flat&logo=redux&logoColor=white" width="110" height="25" alt="redux thunk logo"> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="110" height="25" alt="tailwind css logo"> <p align="center"> <img src="https://via.placeholder.com/600x300?text=Project+Screenshot" width="60%" alt="project screenshot placeholder"> </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmaGlMyLwaEbFEK6PeYp1ZPGd5eoUuEzgpu-gY12dFd8VwIlZef754RzcUIjJ2p3WYsw&usqp=CAU" width="35%" alt="logo">
+</p>
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will get you through run of simulation react with vite.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Make sure that you have node js to installed in your device for run this application
+  - Windows or macOS:
+    [Install Node js Desktop](https://nodejs.org/en/download)
+  - Linux: [Install Node js](https://nodejs.org/en/download)
+- Download or see this [data](https://) and create the app like this.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Running a sample
+
+After you install Node js, run the file that you installed until the file that is installed is complete and check with:
+
+```
+node --version
+```
+or
+```
+node -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+After this you can clone myproject app with 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+git clone "link of project"
+```
+```
+For example:
+git clone https://gitlab.com/haidar1802/myapp
+```
+
+After this,open your folder is already to clone in your device and install node modules with
+
+```
+npm install
+```
+
+so if dont wont to waiting along time with npm install so you can use 
+
+```
+pnpm install
+```
+
+but for the first you have run this code 
+```
+npm install -g pnpm
+```
+
+If you have the problem with the pnpm like this:
+
+![problem.jpg](./src/assets/documentasi/problem.jpg)
+
+So you can look [this](https://lazyadmin.nl/powershell/running-scripts-is-disabled-on-this-system/) for fixed the problem
+
+After this if you use pnpm in the app you can run with 
+```
+pnpm run start
+```
+
+or 
+
+```
+pnpm start
+```
+
+If you use npm in the app you can run app with 
+
+```
+npm run start
+```
+or 
+
+```
+npm start
+```
+So if you run this app the page applications you can see like this
+![project app](./src/assets/documentation/image-project.png) 
+![project app](./src/assets/documentation/image-project2.png) 
+![project app](./src/assets/documentation/image-project3.png) 
+
+### The Finish Of Decomentation :
+
+### Create By : Muhammad Haidar Shahab
+
+### So if you want know about me so you can see my profile:
+
+[My Github](https://github.com/haidar180202) ( Have an problem ) 
+
+[My Gitlab](https://gitlab.com/haidar1802/myapp)
+
+[My Portfolio](https://profile-muhammad-haidar-shahab.netlify.app/)
+
+
+### The technology use to create the application
+
+<img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"  height="25" alt="vite logo"> <img src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react" width="85" height="25" alt="react logo"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" width="85" height="25" alt="typescript logo"> <img src="https://img.shields.io/badge/-Redux_Thunk-764ABC?style=flat&logo=redux&logoColor=white" width="110" height="25" alt="redux thunk logo"> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="110" height="25" alt="tailwind css logo"> <p align="center"> <img src="https://via.placeholder.com/600x300?text=Project+Screenshot" width="60%" alt="project screenshot placeholder"> </p>
